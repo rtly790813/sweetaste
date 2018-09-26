@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["hello"],"mappings":";;AAAA,IAAMA,KAAK,GAAG,IAAd","file":"all.js","sourcesContent":["const hello = 'HI';"]}
