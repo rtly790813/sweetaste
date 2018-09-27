@@ -1,0 +1,27 @@
+@import "./base/normalize";
+@import "./helpers/mediaQueries";
+@import "./helpers/variables";
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./pages/index";
+
+body{
+    font-family: $font-family-primary;
+}
+
+.page1024-max{
+    max-width: 1024px;
+    padding: 0 42px;
+    margin:auto;
+}
+
+.element-flex{
+    display: flex;
+}
+
+@include media-breakpoint(mobile){
+    .page1024-max{
+        padding: 0 ;
+    }
+}

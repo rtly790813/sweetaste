@@ -8,19 +8,19 @@ gulp.task('sass', function() {
     ];
     return gulp.src('./assets/sass/**/*.scss')
         .pipe($.plumber())
-        .pipe($.sass({ outputStyle: 'compressed' }).on('error', $.sass.logError))
+        .pipe($.sass().on('error', $.sass.logError))
         .pipe($.postcss(plugins))
         .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('babel', () =>
     gulp.src('./assets/javascript/**/*.js')
-    .pipe($.sourcemaps.init())
+    // .pipe($.sourcemaps.init())
     .pipe($.babel({
         presets: ['@babel/env']
     }))
-    .pipe($.concat('all.js'))
-    .pipe($.sourcemaps.write('.'))
+    // .pipe($.concat('all.js'))
+    // .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./public/javascript'))
 );
 

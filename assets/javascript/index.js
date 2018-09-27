@@ -1,1 +1,3 @@
-const hello = 'HI';
+function indexFn(){
+    console.log('index');
+}

@@ -1,0 +1,34 @@
+$font-family-primary:"PingFang-SC", "Microsoft JhengHei", sans-serif;
+$font-family-secondary:"Helvetica", sans-serif;
+$font-family-last:"Times";
+
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-bold:600;
+
+@mixin font-size-xx-large {
+    font-size: 2.25rem;
+    line-height: 3rem;
+}
+
+@mixin font-size-x-large {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@mixin font-size-large {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@mixin font-size-regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+@mixin font-size-regular-lr {
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+
