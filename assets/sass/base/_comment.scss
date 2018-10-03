@@ -1,0 +1,166 @@
+$color-primary-400:#2C4832;
+$color-primary-300:#3F5D45;
+$color-primary-200:#8DA291;
+$color-primary-100:#EAF0ED;
+$color-secondary-100:#FFE180;
+.page780-max {
+    max-width: 780px;
+    margin: auto;
+}
+
+.page1024-max {
+    max-width: 1024px;
+    padding: 0 42px;
+    margin: auto;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.element-flex {
+    display: flex;
+}
+
+.element-inline {
+    display: inline-block;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clear-float {
+    overflow: hidden;
+}
+
+.bg-primary-300 {
+    background-color: $color-primary-300;
+}
+
+.bg-primary-200 {
+    background-color: $color-primary-200;
+}
+
+.bg-primary-100 {
+    background-color: $color-primary-100;
+}
+
+.bg-secondary-100 {
+    background-color: $color-secondary-100;
+}
+
+.font-primary-300 {
+    color: $color-primary-300;
+}
+
+.font-primary-200 {
+    color: $color-primary-200;
+}
+
+.font-primary-100 {
+    color: $color-primary-100;
+}
+
+.font-size-xx-large {
+    font-size: 2.25rem;
+    line-height: 3rem;
+}
+
+.font-size-x-large {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-size-large {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-size-regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.font-size-regular-lr {
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-family-secondary {
+    font-family: "Helvetica", sans-serif;
+}
+
+.font-family-time {
+    font-family: "Times";
+}
+
+form {
+    position: relative;
+    color: $color-primary-300;
+    input {
+        background: $color-primary-100;
+        height: 56px;
+        padding: 0 60px;
+        outline: none;
+        border: none;
+    }
+    .form__icon {
+        position: absolute;
+        padding-left: 20px;
+        line-height: 56px;
+        top: 0;
+        left: 0;
+    }
+    .form__button {
+        border: none;
+        background: $color-secondary-100;
+        color: $color-primary-300;
+        height: 56px;
+    }
+}
+
+.social {
+    padding: 0;
+    &-media {
+        display: inline-block;
+        padding-right: 8px;
+        &-icon {
+            width: 32px;
+        }
+    }
+}
+
+@include media-breakpoint(mobile) {
+    .page1024-max {
+        padding: 0;
+    }
+    .page780-max {
+        padding: 0;
+        width: 90%;
+    }
+}

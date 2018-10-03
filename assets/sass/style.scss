@@ -1,11 +1,9 @@
 @import "./base/normalize";
 @import "./helpers/mediaQueries";
-@import "./helpers/variables";
-@import "./helpers/oocss";
-@import "./base/typography";
+@import "./base/comment";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./pages/index";
-body {
-    font-family: $font-family-primary;
+* {
+    font-family: "PingFang-SC", "Microsoft JhengHei", sans-serif;
 }

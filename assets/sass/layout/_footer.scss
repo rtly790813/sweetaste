@@ -3,7 +3,7 @@
     height: 40px;
 }
 
-#footer {
+.footer {
     .subscript {
         &__topic,
         &__sendmail,
@@ -13,9 +13,70 @@
             vertical-align: middle;
         }
         &__title {
-            color: #fff;
-            @include font-size-x-large;
             padding-left: 20px;
+        }
+        &__topic {
+            width: 50%;
+        }
+        &__sendmail {
+            max-width: 380px;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .form__input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form__button {
+            width: 64px;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__content {
+        padding: 30px 0;
+    }
+    &__logo-text {
+        width: 171px;
+    }
+    &__word-img {
+        width: 57px;
+    }
+    &__desc {
+        position: absolute;
+        bottom: 0;
+    }
+    .social,
+    .copyright {
+        width: 49%;
+    }
+    .copyright {
+        text-align: right;
+        font-family: "Times";
+    }
+}
+
+@include media-breakpoint(mobile) {
+    .footer {
+        .subscript {
+            text-align: center;
+            &__topic {
+                width: 100%;
+            }
+        }
+        &__word-img {
+            display: none;
+        }
+        &__desc {
+            position: relative;
+            margin-top: 20%;
+        }
+        .social,
+        .copyright {
+            width: 100%;
+        }
+        .copyright {
+            text-align: left;
         }
     }
 }
