@@ -1,0 +1,59 @@
+.page780-max {
+    max-width: 780px;
+    margin: auto;
+}
+
+.page1024-max {
+    max-width: 1024px;
+    padding: 0 42px;
+    margin: auto;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.element-flex {
+    display: flex;
+}
+
+.element-inline {
+    display: inline-block;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clear-float {
+    overflow: hidden;
+}
+
+.col-row {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@include media-breakpoint(mobile) {
+    .page1024-max {
+        padding: 0;
+    }
+    .page780-max {
+        padding: 0;
+        width: 90%;
+    }
+}

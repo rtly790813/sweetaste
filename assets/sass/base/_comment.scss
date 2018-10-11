@@ -1,51 +1,3 @@
-$color-primary-400:#2C4832;
-$color-primary-300:#3F5D45;
-$color-primary-200:#8DA291;
-$color-primary-100:#EAF0ED;
-$color-secondary-100:#FFE180;
-.page780-max {
-    max-width: 780px;
-    margin: auto;
-}
-
-.page1024-max {
-    max-width: 1024px;
-    padding: 0 42px;
-    margin: auto;
-}
-
-.p-absolute {
-    position: absolute;
-}
-
-.p-relative {
-    position: relative;
-}
-
-.p-fixed {
-    position: fixed;
-}
-
-.element-flex {
-    display: flex;
-}
-
-.element-inline {
-    display: inline-block;
-}
-
-.float-l {
-    float: left;
-}
-
-.float-r {
-    float: right;
-}
-
-.clear-float {
-    overflow: hidden;
-}
-
 .bg-primary-300 {
     background-color: $color-primary-300;
 }
@@ -91,7 +43,7 @@ $color-secondary-100:#FFE180;
 
 .font-size-regular {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .font-size-regular-lr {
@@ -119,31 +71,6 @@ $color-secondary-100:#FFE180;
     font-family: "Times";
 }
 
-form {
-    position: relative;
-    color: $color-primary-300;
-    input {
-        background: $color-primary-100;
-        height: 56px;
-        padding: 0 60px;
-        outline: none;
-        border: none;
-    }
-    .form__icon {
-        position: absolute;
-        padding-left: 20px;
-        line-height: 56px;
-        top: 0;
-        left: 0;
-    }
-    .form__button {
-        border: none;
-        background: $color-secondary-100;
-        color: $color-primary-300;
-        height: 56px;
-    }
-}
-
 .social {
     padding: 0;
     &-media {
@@ -152,15 +79,5 @@ form {
         &-icon {
             width: 32px;
         }
-    }
-}
-
-@include media-breakpoint(mobile) {
-    .page1024-max {
-        padding: 0;
-    }
-    .page780-max {
-        padding: 0;
-        width: 90%;
     }
 }

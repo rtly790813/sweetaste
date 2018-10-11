@@ -1,0 +1,24 @@
+form {
+    position: relative;
+    color: $color-primary-300;
+    input {
+        background: $color-primary-100;
+        height: 56px;
+        padding: 0 60px;
+        outline: none;
+        border: none;
+    }
+    .form__icon {
+        position: absolute;
+        padding-left: 20px;
+        line-height: 56px;
+        top: 0;
+        left: 0;
+    }
+    .form__button {
+        border: none;
+        background: $color-secondary-100;
+        color: $color-primary-300;
+        height: 56px;
+    }
+}
