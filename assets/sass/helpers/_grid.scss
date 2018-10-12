@@ -1,0 +1,18 @@
+.col-12 {
+    width: 100%;
+}
+
+@for $i from 1 through 11 {
+    .col-#{$i}{
+        width: #{(76.5% / 12 * $i)+(23.5% / 11 * ($i - 1))};
+    }
+}
+
+@include media-breakpoint(mobile) {
+    @for $i from 1 through 11 {
+        .sm-col-#{$i}{
+            width: #{(76.5% / 12 * $i)+(23.5% / 11 * ($i - 1))};
+        }
+    }
+    
+}

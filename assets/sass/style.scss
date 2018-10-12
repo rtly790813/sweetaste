@@ -1,8 +1,13 @@
-@import "./base/normalize";
+// helper
 @import "./helpers/mediaQueries";
-@import "./base/variables";
 @import "./helpers/oocss";
+@import "./helpers/grid";
+
+@import "./base/normalize";
+@import "./base/variables";
+@import "./base/typography";
 @import "./base/comment";
+
 
 // module
 @import "./module/form";
@@ -17,6 +22,18 @@
 @import "./pages/index";
 
 * {
+    box-sizing: border-box;
+}
+
+html {
     font-family: "PingFang-SC", "Microsoft JhengHei", sans-serif;
     color:$color-primary-300;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+a {
+    color:$color-primary-300;
+    text-decoration: none;
+    transition: .3s;
 }

@@ -1,76 +1,52 @@
+.page780-max {
+    max-width: 780px;
+    margin: auto;
+    width: 77%;
+}
+.page1024-max {
+    max-width: 1024px;
+    padding: 0 42px;
+    margin: auto;
+}
 .bg-primary-300 {
     background-color: $color-primary-300;
 }
-
 .bg-primary-200 {
     background-color: $color-primary-200;
 }
-
 .bg-primary-100 {
     background-color: $color-primary-100;
 }
-
 .bg-secondary-100 {
     background-color: $color-secondary-100;
 }
-
 .font-primary-300 {
     color: $color-primary-300;
 }
-
 .font-primary-200 {
     color: $color-primary-200;
 }
-
 .font-primary-100 {
     color: $color-primary-100;
 }
-
-.font-size-xx-large {
-    font-size: 2.25rem;
-    line-height: 3rem;
-}
-
-.font-size-x-large {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-.font-size-large {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-.font-size-regular {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.font-size-regular-lr {
-    font-size: 1rem;
-    line-height: 2.5rem;
-}
-
 .font-light {
     font-weight: 300;
 }
-
 .font-regular {
     font-weight: 400;
 }
-
 .font-bold {
     font-weight: 600;
 }
-
+.font-vertical{
+    writing-mode: vertical-rl ;
+}
 .font-family-secondary {
     font-family: "Helvetica", sans-serif;
 }
-
 .font-family-time {
     font-family: "Times";
 }
-
 .social {
     padding: 0;
     &-media {
@@ -78,6 +54,27 @@
         padding-right: 8px;
         &-icon {
             width: 32px;
+        }
+    }
+}
+.banner {
+    &__image{
+        max-width: 100%;
+        padding-bottom: 53%;
+    }
+}
+@include media-breakpoint(mobile) {
+    .page1024-max {
+        padding: 0;
+    }
+    .page780-max {
+        padding: 0;
+        width: 90%;
+    }
+    .banner {
+        &__image{
+            padding-bottom: 74%;
+    
         }
     }
 }
