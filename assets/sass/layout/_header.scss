@@ -42,8 +42,10 @@
     padding-left: 40px;
 }
 @include media-breakpoint(mobile){
-    .element-flex {
-        justify-content: space-between;
+    .header{
+        .element-flex {
+            justify-content: space-between;
+        }
     }
     .header__switch{
         display: inline-block;

@@ -1,0 +1,16 @@
+.auth__container{
+    margin-bottom: 60px;
+}
+.login {
+    &__title{
+        margin: 40px 0;
+        font-size: $font-size-xxl;
+        color: $color-primary-100;
+    }
+}
+
+@include media-breakpoint(mobile){
+    .auth__container{
+        margin-bottom: 0;
+    }
+}

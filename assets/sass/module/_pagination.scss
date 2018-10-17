@@ -25,3 +25,12 @@
         }
     }
 }
+
+@include media-breakpoint(mobile){
+    .pagination { 
+        margin-top: 0;
+        &__wrap{
+            justify-content: center;
+        }
+    }
+}

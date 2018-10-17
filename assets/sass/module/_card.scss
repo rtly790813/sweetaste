@@ -26,15 +26,6 @@
     &__title {
         border-right: 1px solid $color-primary-100;
     }
-    &__btn {
-        text-align: center;
-        padding: 20px 0;
-        background: $color-primary-100;
-        font-size: $font-size-xl;
-        &:hover {
-            background: $color-secondary-100;
-        }
-    }
     &__mark {
         top: 0;
         left: 20px;
