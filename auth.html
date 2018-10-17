@@ -37,7 +37,7 @@
                 </ul>
             </nav>
 
-            <a class="header__icon shopping-car" href="">
+            <a class="header__icon shopping-car" href="cart.html">
                 <i class="material-icons">shopping_cart</i>
             </a>
         </div>
@@ -46,15 +46,31 @@
 
     <main class="auth__container">
         <!-- Start login -->
-        <div class="login page1024-max element-flex">
-            <div class="col-6 bg-primary-300">
+        <div class="login page1024-max element-flex p-relative">
+            <div class="login__form col-6 bg-primary-300">
                 <h2 class="login__title text-center">會員登錄</h2>
-                <form action="" class="login__form">
-
+                <div class="login__social col-6 bg-primary-100 lg-hide">
+                    <p>連結社群帳號</p>
+                </div>
+                <form action="">
+                    <div class="form__group p-relative">
+                        <input class="form__text" type="text" placeholder="電子信箱/手機號碼">
+                        <i class="form__icon material-icons">person</i>
+                    </div>
+                    <div class="form__group p-relative">
+                        <input class="form__text" type="password" placeholder="請輸入使用者密碼">
+                        <i class="form__icon material-icons">vpn_key</i>
+                    </div>
+                    <div class="form__group">
+                        <label for="">
+                            <input class="form__checkbox" type="checkbox" name="" id="">
+                            <p>記住我</p> 
+                        </label>
+                    </div>
                 </form>
             </div>
-            <div class="col-6 bg-primary-100">
-                    Hello
+            <div class="login__social col-6 bg-primary-100">
+                Hello
             </div>
         </div>
         <!-- End login -->
@@ -69,7 +85,7 @@
             </div>
             <form action="" class="subscript__sendmail">
                 <div class="form__group">
-                    <input class="form__input" type="mail">
+                    <input class="form__text" type="mail">
                     <i class="form__icon material-icons">mail</i>
                     <button class="form__button p-absolute">
                         <i class="material-icons">arrow_forward</i>

@@ -1,16 +1,25 @@
-.auth__container{
+.auth__container {
     margin-bottom: 60px;
 }
+
 .login {
-    &__title{
+    &__form {
+        padding-bottom: 10px;
+    }
+    &__title {
         margin: 40px 0;
         font-size: $font-size-xxl;
         color: $color-primary-100;
     }
+    &__social {}
+    .form__group {
+        width: 330px;
+        margin: 0 auto 16px;
+    }
 }
 
-@include media-breakpoint(mobile){
-    .auth__container{
+@include media-breakpoint(mobile) {
+    .auth__container {
         margin-bottom: 0;
     }
 }

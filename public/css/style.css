@@ -299,13 +299,27 @@ table {
 form {
   position: relative;
   color: #3F5D45; }
-  form input {
+  form label {
+    color: #EAF0ED;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  form .form__text {
     background: #EAF0ED;
     height: 56px;
     padding: 0 60px;
+    font-size: 1rem;
     outline: none;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    width: 100%; }
+  form .form__checkbox {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    outline: none;
+    margin: 0 10px 0 0; }
   form .form__icon {
     position: absolute;
     padding-left: 20px;
@@ -317,6 +331,8 @@ form {
     background: #FFE180;
     color: #3F5D45;
     height: 56px; }
+  form ::-webkit-input-placeholder {
+    color: #8DA291; }
 
 .card {
   -webkit-box-pack: justify;
@@ -494,7 +510,7 @@ form {
   .subscript__sendmail {
     max-width: 380px;
     width: 100%; }
-  .subscript .form__input {
+  .subscript .form__text {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -705,10 +721,17 @@ form {
 .auth__container {
   margin-bottom: 60px; }
 
+.login__form {
+  padding-bottom: 10px; }
+
 .login__title {
   margin: 40px 0;
   font-size: 2.25rem;
   color: #EAF0ED; }
+
+.login .form__group {
+  width: 330px;
+  margin: 0 auto 16px; }
 
 @media screen and (max-width: 768px) {
   .auth__container {
